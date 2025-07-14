@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>ตรวจสอบคะแนนนักเรียน</title>
+  <style>
+    body { font-family: sans-serif; padding: 2em; max-width: 500px; margin: auto; }
+    input { padding: 0.5em; font-size: 1em; width: 100%; margin-bottom: 1em; }
+    button { padding: 0.5em 1em; font-size: 1em; }
+    #result { margin-top: 1em; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h2>ระบบตรวจสอบคะแนนนักเรียน</h2>
+  <input type="text" id="studentId" placeholder="กรอกรหัสนักเรียน เช่น 65001">
+  <button onclick="checkScore()">ตรวจสอบคะแนน</button>
+  <div id="result"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
