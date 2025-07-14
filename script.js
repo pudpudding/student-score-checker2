@@ -13,7 +13,10 @@ async function checkScore() {
     const student = data.students.find(s => s.id === id);
 
     if (student) {
-      resultDiv.textContent = `ชื่อ: ${student.name}, คะแนน: ${student.score}`;
+      let workStatus = student.works.map(work => 
+        `- ${work.title}: ${work.submitted ? 'ส่งแล้ว ✅' : 'ยังไม่ส่ง ❌'}`).join("\n");
+      
+      resultDiv.textContent = `ชื่อ: ${student.name}\nคะแนน: ${student.score}\nงานที่ส่ง:\n${workStatus}`;
     } else {
       resultDiv.textContent = "ไม่พบรหัสนักเรียนนี้";
     }
