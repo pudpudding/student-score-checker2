@@ -1,7 +1,31 @@
 {
   "students": [
-    { "id": "65001", "name": "Ploy", "score": 85 },
-    { "id": "65002", "name": "Mek", "score": 90 },
-    { "id": "65003", "name": "Oat", "score": 78 }
+    {
+      "id": "65001",
+      "name": "Ploy",
+      "score": 85,
+      "works": [
+        { "title": "ใบงานที่ 1", "submitted": true },
+        { "title": "ใบงานที่ 2", "submitted": false }
+      ]
+    },
+    {
+      "id": "65002",
+      "name": "Mek",
+      "score": 90,
+      "works": [
+        { "title": "ใบงานที่ 1", "submitted": true },
+        { "title": "ใบงานที่ 2", "submitted": true }
+      ]
+    },
+    {
+      "id": "65003",
+      "name": "Oat",
+      "score": 78,
+      "works": [
+        { "title": "ใบงานที่ 1", "submitted": false },
+        { "title": "ใบงานที่ 2", "submitted": false }
+      ]
+    }
   ]
 }
